@@ -8,5 +8,13 @@
     "start": "node server.js"
   },
   "author": "Keilin Olsen (http://github.com/pentaphobe)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "connect": "^3.6.5",
+    "express": "^4.16.2",
+    "seedrandom": "^2.4.3",
+    "swig": "^1.4.2"
+  }
 }

@@ -1,0 +1,11 @@
+{
+  "name": "FakeData",
+  "version": "0.0.1",
+  "description": "Generic system for generating test data records",
+  "main": "test.js",
+  "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "keilin.olsen@heathwallace.com",
+  "license": "ISC"
+}

@@ -1,0 +1,68 @@
+
+<!--
+
+This can be ignored for now, just pondering an alternative approach to our
+HTML preprocessing and binding options..
+
+
+'.search' : {
+	text: '{{blah}}',
+	children: {
+		'#search' : {
+			':placeholder': '{{search}}'
+		}
+	}
+}
+
+
+
+-->
+
+
+<!--
+	This script object is an example of a "glue" definition.
+
+	It uses CSS selectors to specify particular items in the associated template markup which can
+	be processed at compile time.
+
+	Common behaviours might be:
+
+		- adding/removing classes based on build options
+		- adding template vars to static markup
+		- remove children, spans, static text, etc...
+
+-->
+<script>
+	templateInfo: {
+		'.submit': {
+			children: {
+				'span.accessible': { text: '{{=search}}' }
+			}
+		},
+		'.dev': {
+			ifDev: 'remove'
+		}
+	}
+</script>
+
+<div class="search">
+	<form action="../search-results/" method="post">
+		<input type="text" name="search" id="search" placeholder="search" />
+		<div class="dev">This is development mode</div>
+		<button type="submit" class="submit icon-search"><span class="accessible">Search</span></button>
+	</form>
+</div>
+
+
+
+
+
+<script>
+	'body': {
+		components: {
+
+		}
+	}
+</script>
+
+

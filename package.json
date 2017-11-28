@@ -1,0 +1,12 @@
+{
+  "name": "fakedata",
+  "version": "0.1.0",
+  "description": "An old bit of code for generating template-based data for testing/spec",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Keilin Olsen (http://github.com/pentaphobe)",
+  "license": "MIT"
+}
